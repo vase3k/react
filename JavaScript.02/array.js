@@ -1,2 +1,3 @@
 const array = [1, 2, 3];
 let govno = 1;
+let govno = 1;
