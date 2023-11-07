@@ -75,3 +75,14 @@ for (let i = 2; i <= 10; i++) {
     console.log(arrayOfNumbers);
     return arrayOfNumbers;
 })();
+
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const result2 = [];
+
+i = 0;
+do {
+    result2[i] = arr[i];
+    i++;
+} while (i <= arr.length - 1);
+
+
