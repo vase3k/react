@@ -1,36 +1,74 @@
 "use strict";
 
-const btns = document.querySelectorAll("button"),
-    overlay = document.querySelector(".overlay");
-/* btn.onclick = function () {
-    alert("click");
+const box = document.querySelector(".box");
+const block = document.querySelector(".block");
+
+console.log(block);
+/* if (block) {
+    console.log(block.textContent);
+} */
+console.log(block?.textContent);
+console.log(1 + 3);
+
+const userData = {
+    name: "ivan",
+    age: null,
+    say: function () {
+        console.log("hello");
+    }
 };
-btn.onclick = function () {
-    alert("second click");
+const userData2 = null;
+
+userData.say();
+userData.hey?.();
+
+/* if (userData && userData.skills && userData.skills.js) {
+    console.log(userData.skills.js);
+}
+ */
+
+console.log(userData.skills?.js);
+console.log(userData2?.skills?.js);
+
+/* const obj = {
+    "name": "test",
+    [Symbol("id")]: 1,
+    getId: function () {
+        return this[id];
+    }
 }; */
 
-/* btn.addEventListener("click", () => alert("click"));
-btn.addEventListener("click", () => alert("double click")); */
-/* let i = 0; */
-const deleteElement = (e) => {
-    console.log(e.currentTarget);
-    console.log(e.type);
-    /*     i++;
-        if (i == 1) {
-            btn.removeEventListener("click", deleteElement);
-        } */
+/* obj[id] = 1; */
+/* console.log(obj.getId()); */
+/* console.log(obj[Object.getOwnPropertySymbols(obj)[0]]); */
+
+/* for (let value in obj) console.log(value); */
+
+const myAwesomeDB = {
+    movies: [],
+    actors: [],
+    [Symbol.for("id")]: 123
 };
 
-/* btn.addEventListener("click", deleteElement);
-overlay.addEventListener("click", deleteElement); */
+myAwesomeDB.id = "12312321";
+console.log(myAwesomeDB[Symbol.for("id")]);
+console.log(myAwesomeDB);
+myAwesomeDB[Symbol.for("id")] = 1234;
+console.log(myAwesomeDB[Symbol.for("id")]);
 
-btns.forEach(btn => {
-    btn.addEventListener("click", deleteElement, { once: true });
-});
+const user = {
+    name: "alex",
+    surname: "Smith",
+    birthday: "20/04/1993",
+    showMyPublicData: function () {
+        console.log(`${this.name} ${this.surname}`);
+    }
+};
 
+Object.defineProperty(user, "birthday", { writable: false });
+console.log(Object.getOwnPropertyDescriptor(user, "name"));
+Object.defineProperty(user, "name", { writable: false });
 
-const link = document.querySelector("a");
-link.addEventListener("click", e => {
-    e.preventDefault();
-    console.log(e.target);
-});
+//writable
+//enumerable
+//configurable
