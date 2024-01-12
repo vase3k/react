@@ -92,7 +92,8 @@
     "yocto-queue": "^0.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.53.0"
+    "eslint": "^8.53.0",
+    "json-server": "^1.0.0-alpha.19"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
