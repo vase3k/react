@@ -5,30 +5,25 @@ import EmployeesList from '../employees-list/employees-list';
 import EmployeesAddForm from '../employee-add-form/employee-add-form';
 import './app.css';
 
-function WhoAmI({ name, surname, link }) {
-    return (
-        <div>
-            <h1>My name is {name()}, surname - {surname}</h1>
-            <a href={link}>My profile</a>
-        </div>
-    )
-}
-
 function App() {
+
+    const data = [
+        { name: "John C", salary: 800, increase: false },
+        { name: "Alex M.", salary: 3000, increase: true },
+        { name: "Carl W.", salary: 5000, increase: false },
+    ];
+
     return (
-        /*         <div className="app">
-                    <AppInfo />
-        
-                    <div className="Search-panel">
-                        <SearchPanel />
-                        <AppFilter />
-                    </div>
-                    <EmployeesList />
-                    <EmployeesAddForm />
-                </div> */
-        <div className='app'>
-            <WhoAmI name={() => 'John'} surname="vinogradov" link="https://3dnews.ru/" />
-            <WhoAmI name={() => 'Alex'} surname="Gredov" link="https://3dnews.ru/" />
+        <div className="app">
+            <AppInfo />
+
+            <div className="Search-panel">
+                <SearchPanel />
+                <AppFilter />
+            </div>
+
+            <EmployeesList data={data} />
+            <EmployeesAddForm />
         </div>
     );
 }
