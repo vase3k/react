@@ -6,7 +6,7 @@ import EmployeesAddForm from '../employee-add-form/employee-add-form';
 import { Component } from 'react';
 import './app.css';
 
-class WhoAmI extends Component {
+/* class WhoAmI extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -56,13 +56,13 @@ function App() {
         </div>
     )
 }
-
-/* function App() {
+ */
+function App() {
 
     const data = [
-        { name: "John C", salary: 800, increase: false, id: 1 },
-        { name: "Alex M.", salary: 3000, increase: true, id: 2 },
-        { name: "Carl W.", salary: 5000, increase: false, id: 3 },
+        { name: "John C", salary: 800, id: 1 },
+        { name: "Alex M.", salary: 3000, id: 2 },
+        { name: "Carl W.", salary: 5000, id: 3 },
     ];
 
     return (
@@ -78,6 +78,6 @@ function App() {
             <EmployeesAddForm />
         </div>
     );
-} */
+}
 
 export default App;
