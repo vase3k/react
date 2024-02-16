@@ -7,16 +7,16 @@
       "element": "fire"
     },
     {
-      "id": "2",
-      "name": "Неизвестный герой",
-      "description": "Скрывающийся в тени",
-      "element": "wind"
+      "id": "153f45da-1c14-482d-94be-8a199136172c",
+      "name": "Dath revan",
+      "description": "Grand Master Jedi",
+      "element": "water"
     },
     {
-      "id": "0d7cca79-6a0d-4350-bb06-8020660852dc",
-      "name": "asdsa",
-      "description": "asdsa",
-      "element": "water"
+      "id": "804fe5a8-4cdb-48bb-97e7-2596317560a2",
+      "name": "Darth Sidius",
+      "description": "Sith Lord",
+      "element": "fire"
     }
   ],
   "filters": [
