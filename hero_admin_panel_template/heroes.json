@@ -17,6 +17,12 @@
       "name": "Darth Sidius",
       "description": "Sith Lord",
       "element": "fire"
+    },
+    {
+      "id": "9c5d919b-49f4-44ad-b304-a242e2a5ffff",
+      "name": "Darth Vader",
+      "description": "Sith Lord",
+      "element": "wind"
     }
   ],
   "filters": [

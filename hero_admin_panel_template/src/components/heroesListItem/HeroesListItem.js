@@ -1,4 +1,3 @@
-
 const HeroesListItem = ({ name, description, element, onDelete }) => {
 
     let elementClassName;
@@ -23,7 +22,7 @@ const HeroesListItem = ({ name, description, element, onDelete }) => {
     return (
         <li
             className={`card flex-row mb-4 shadow-lg text-white ${elementClassName}`}>
-            <img src="https://rare-gallery.com/mocahbig/391936-darth-revan-star-wars-lightsaber-knights-of-the-old-republic.jpg"
+            <img src="https://sun9-58.userapi.com/c854016/v854016832/25bb98/jREDAfmmo2U.jpg"
                 className="img-fluid w-25 d-inline"
                 alt="unknown hero"
                 style={{ 'objectFit': 'cover' }} />
