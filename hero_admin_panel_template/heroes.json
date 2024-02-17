@@ -23,6 +23,12 @@
       "name": "Luke Skywalker",
       "description": "Grand Master Jedi",
       "element": "earth"
+    },
+    {
+      "id": "eabedc9f-606e-45d8-8d18-7e5a196fcd90",
+      "name": "Anakin Skywalker",
+      "description": "Darth Vader",
+      "element": "fire"
     }
   ],
   "filters": [
