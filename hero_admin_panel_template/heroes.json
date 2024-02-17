@@ -13,16 +13,22 @@
       "element": "water"
     },
     {
-      "id": "804fe5a8-4cdb-48bb-97e7-2596317560a2",
-      "name": "Darth Sidius",
-      "description": "Sith Lord",
-      "element": "fire"
-    },
-    {
       "id": "9c5d919b-49f4-44ad-b304-a242e2a5ffff",
       "name": "Darth Vader",
       "description": "Sith Lord",
       "element": "wind"
+    },
+    {
+      "id": "13b47df3-41bd-4eb0-b674-ad663a0c5941",
+      "name": "Darth Malak",
+      "description": "Dark forces",
+      "element": "water"
+    },
+    {
+      "id": "b542143a-24dd-4a91-b697-63399efe4618",
+      "name": "Darth Sidius",
+      "description": "Emperor",
+      "element": "water"
     }
   ],
   "filters": [
