@@ -1,12 +1,6 @@
 {
   "heroes": [
     {
-      "id": "1",
-      "name": "Первый герой",
-      "description": "Первый герой в рейтинге!",
-      "element": "fire"
-    },
-    {
       "id": "153f45da-1c14-482d-94be-8a199136172c",
       "name": "Dath revan",
       "description": "Grand Master Jedi",
@@ -23,6 +17,12 @@
       "name": "Darth Sidius",
       "description": "Emperor",
       "element": "water"
+    },
+    {
+      "id": "ebd86dcf-2976-44c8-83d4-a0040dbeecfa",
+      "name": "Luke Skywalker",
+      "description": "Grand Master Jedi",
+      "element": "earth"
     }
   ],
   "filters": [
