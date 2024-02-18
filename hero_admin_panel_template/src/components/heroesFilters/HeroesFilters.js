@@ -3,10 +3,8 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import classNames from 'classnames';
 
-import {
-    filtersFetching, filtersFetched,
-    filtersFetchingError, activeFilterChanged
-} from '../../actions';
+import { fetchFilters } from '../../actions';
+import { filtersChanged } from './filtersSlice';
 import Spinner from '../spinner/Spinner';
 
 const HeroesFilters = () => {
@@ -16,15 +14,14 @@ const HeroesFilters = () => {
     const { request } = useHttp();
 
     useEffect(() => {
-        dispatch(filtersFetching());
-        request("http://localhost:3001/filters")
-            .then(data => dispatch(filtersFetched(data)))
-            .catch(() => dispatch(filtersFetchingError()))
+        dispatch(fetchFilters(request));
+
+        // eslint-disable-next-line
     }, []);
 
-    if (filtersLoadingStatus === 'loading') {
-        return <Spinner />
-    } else if (filtersLoadingStatus === 'error') {
+    if (filtersLoadingStatus === "loading") {
+        return <Spinner />;
+    } else if (filtersLoadingStatus === "error") {
         return <h5 className="text-center mt-5">Ошибка загрузки</h5>
     }
 
@@ -34,14 +31,16 @@ const HeroesFilters = () => {
         }
 
         return arr.map(({ name, className, label }) => {
+
             const btnClass = classNames('btn', className, {
                 'active': name === activeFilter
             });
+
             return <button
                 key={name}
                 id={name}
                 className={btnClass}
-                onClick={() => dispatch(activeFilterChanged(name))}
+                onClick={() => dispatch(filtersChanged(name))}
             >{label}</button>
         })
     }
