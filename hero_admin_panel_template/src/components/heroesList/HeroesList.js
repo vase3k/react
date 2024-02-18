@@ -40,14 +40,8 @@ const HeroesList = () => {
             .then(data => console.log(data, 'Deleted'))
             .then(dispatch(heroDeleted(id)))
             .catch(err => console.log(err));
-        // eslint-disable-next-line
+        // eslint-disable-next-line  
     }, [request]);
-
-    if (heroesLoadingStatus === 'loading') {
-        return <Spinner />;
-    } else if (heroesLoadingStatus === 'error') {
-        return <h5 className="text-center mt-5">Ошибка загрузки</h5>
-    }
 
     if (heroesLoadingStatus === "loading") {
         return <Spinner />;
@@ -60,7 +54,7 @@ const HeroesList = () => {
             return (
                 <CSSTransition
                     timeout={0}
-                    classNames='hero'>
+                    classNames="hero">
                     <h5 className="text-center mt-5">Героев пока нет</h5>
                 </CSSTransition>
             )
@@ -71,8 +65,8 @@ const HeroesList = () => {
                 <CSSTransition
                     key={id}
                     timeout={500}
-                    classNames='hero'>
-                    <HeroesListItem {...props} onDelete={() => onDelete(id)} />
+                    classNames="hero">
+                    <HeroesListItem  {...props} onDelete={() => onDelete(id)} />
                 </CSSTransition>
             )
         })

@@ -31,10 +31,10 @@ const heroesSlice = createSlice({
             .addCase(fetchHeroes.fulfilled, (state, action) => {
                 state.heroesLoadingStatus = 'idle';
                 state.heroes = action.payload;
-            },)
+            })
             .addCase(fetchHeroes.rejected, state => {
                 state.heroesLoadingStatus = 'error';
-            },)
+            })
             .addDefaultCase(() => { })
     }
 });
