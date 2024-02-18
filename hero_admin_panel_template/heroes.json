@@ -29,12 +29,6 @@
       "name": "Anakin Skywalker",
       "description": "Darth Vader",
       "element": "fire"
-    },
-    {
-      "id": "be1cc2f6-620f-4996-8571-bde176f65dee",
-      "name": "Cal Kestis",
-      "description": "Gray Jedi",
-      "element": "wind"
     }
   ],
   "filters": [
